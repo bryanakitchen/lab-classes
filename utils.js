@@ -1,9 +1,6 @@
 
 function stripInput(input) {
-    const removeLetters = input.replace(/[-A-Za-z0-9,"'+*/=.&$!@#%^_-]/g, '');
-    const array = removeLetters.split('');
-
-    return array;
+    return input.match(/[(){}\[\]]/g);
 }
 
 const word = stripInput('tes[]{}(){{{$!@#%^&*1ting_');
