@@ -2,9 +2,12 @@
   "name": "lab-classes",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api-server.js",
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "start": "node api-server.js",
+    "start:watch": "nodemon api-server.js"
   },
   "repository": {
     "type": "git",
