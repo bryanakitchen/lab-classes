@@ -18,10 +18,6 @@ class Stack {
     }
 }
 
-module.exports = Stack;
-
-const newStack = new Stack();
-newStack.push("[hi");
-newStack.push("what");
-newStack.push("last");
-console.log(newStack.peek());
+module.exports = {
+    Stack
+};
