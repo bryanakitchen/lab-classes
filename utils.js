@@ -1,10 +1,8 @@
 
 function stripInput(input) {
+    // console.log(input.match(/[(){}\[\]]/g));
     return input.match(/[(){}\[\]]/g);
 }
-
-const word = stripInput('tes[]{}(){{{$!@#%^&*1ting_');
-console.log(word);
 
 module.exports = {
     stripInput
